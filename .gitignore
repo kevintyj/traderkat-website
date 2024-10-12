@@ -1,0 +1,26 @@
+# Commited dist files
+dist
+lib
+
+# Dependencies
+node_modules
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+*.launch
+.settings/
+
+# Temp
+gitignore
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Test files
+coverage
+
+# Firebase
+.firebase

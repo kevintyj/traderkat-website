@@ -1,0 +1,14 @@
+.btn-base {
+    background: linear-gradient(0deg, #000 0%, #222 100%);
+    box-shadow: 0px 0px 0px 1px #202020 inset, 0px 2px 1px 0px rgba(255, 255, 255, 0.16) inset;
+}
+
+.btn-white-base {
+    background: linear-gradient(0deg, #E0E0E0 0%, #FFF 47.5%);
+    box-shadow: 0px 0px 0px 1px #D1D1D1 inset, 0px -2px 1px 0px rgba(0, 0, 0, 0.16) inset;
+}
+
+.btn-discord {
+    background: linear-gradient(0deg, #202FCA 0%, #5865F2 100%);
+    box-shadow: 0px 0px 0px 1px #2D39BD inset, 0px 2px 1px 0px rgba(255, 255, 255, 0.16) inset;
+}

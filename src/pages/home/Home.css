@@ -1,0 +1,15 @@
+.features-bg {
+    background: radial-gradient(146.04% 122.25% at 76.48% -50.08%, #4A3A00 0%, #8A6300 0.01%, #000 81.06%), #090909;
+}
+
+.amber-bg {
+    background: radial-gradient(100.4% 213.45% at 54.27% -132.79%, #fbff60 0%, rgba(242, 255, 89, 0.00) 100%), #fc8124;
+}
+
+.review-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* Number of lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
