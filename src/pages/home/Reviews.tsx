@@ -31,28 +31,24 @@ const Review: ReviewProp = (prop) => {
 const Reviews: Component = () => {
 	const reviewList: Array<[string, string]> = [
 		[
-			'Now I know what a work-life balance is',
-			'I cannot thank the Zero team enough for creating this well-polished app. Zero, along with a healthy ketogenic diet, helped me lose over 100 lbs — and still going strong!',
-		],
-		[
 			'I can stop worrying about my trades, and focus on whats next',
-			'I cannot thank the Zero team enough for creating this well-polished app. Zero, along with a healthy ketogenic diet, helped me lose over 100 lbs — and still going strong!',
+			'Having Traderkat notify me on my entire watchlist has changed the way I trade. I cannot go back to what I was doing.',
 		],
 		[
 			'Must-have for investors with more than 20 coins in their watchlist',
-			'I cannot thank the Zero team enough for creating this well-polished app. Zero, along with a healthy ketogenic diet, helped me lose over 100 lbs — and still going strong!',
+			'Saves me more time and headache than the subscription I pay every month, worth every penny! Would love more people to know about this app.',
+		],
+		[
+			'I make more predictable decisions now',
+			'Before, my strategy was to look at a chart until something stood out at me, now Traderkat notifies me exactly when certain positions meet my threshold, making my trades much more predictable.',
+		],
+		[
+			'Finally, a solution for my busy job',
+			'I\'m not able to look at my trades on Tradingview at my job, but Traderkat allows me to get the same information through my phone, which has been helpful to me.',
 		],
 		[
 			'Now I know what a work-life balance is',
-			'I cannot thank the Zero team enough for creating this well-polished app. Zero, along with a healthy ketogenic diet, helped me lose over 100 lbs — and still going strong!',
-		],
-		[
-			'I can stop worrying about my trades, and focus on whats next',
-			'I cannot thank the Zero team enough for creating this well-polished app. Zero, along with a healthy ketogenic diet, helped me lose over 100 lbs — and still going strong!',
-		],
-		[
-			'Must-have for investors with more than 20 coins in their watchlist',
-			'I cannot thank the Zero team enough for creating this well-polished app. Zero, along with a healthy ketogenic diet, helped me lose over 100 lbs — and still going strong!',
+			'I used to be so worried about my option positions, with Traderkat, I can know immediately when large price movements happen across my entire watchlist so that I know when to execute my trades. ',
 		],
 	];
 
@@ -73,7 +69,7 @@ const Reviews: Component = () => {
 
 				<div class="relative max-w-[100vw] w-full overflow-hidden">
 					<SliderProvider>
-						<div class="hidden px-12 md:block">
+						<div class="relative hidden px-12 md:block">
 							<Slider options={{ slides: { perView: 3, spacing: 8 }, loop: true }}>
 								<For each={reviewList}>
 									{review => (
@@ -81,8 +77,23 @@ const Reviews: Component = () => {
 									)}
 								</For>
 							</Slider>
+							<SliderButton
+								prev
+								class="absolute left-2 top-1/2 z-10 h-full flex items-center rounded-md bg-[rgba(255,255,255,0.64)] px-2 -translate-y-1/2"
+							>
+								<img src={arrowLeft} alt="Previous" />
+							</SliderButton>
+							<SliderButton
+								next
+								class="absolute right-2 top-1/2 z-10 h-full flex items-center rounded-md bg-[rgba(255,255,255,0.64)] px-2 -translate-y-1/2"
+							>
+								<img src={arrowRight} alt="Next" />
+							</SliderButton>
 						</div>
-						<div class="px-12 md:hidden">
+					</SliderProvider>
+
+					<SliderProvider>
+						<div class="relative px-12 md:hidden">
 							<Slider options={{ slides: { perView: 1, spacing: 8 }, loop: true }}>
 								<For each={reviewList}>
 									{review => (
@@ -90,19 +101,19 @@ const Reviews: Component = () => {
 									)}
 								</For>
 							</Slider>
+							<SliderButton
+								prev
+								class="absolute left-2 top-1/2 z-10 h-full flex items-center rounded-md bg-[rgba(255,255,255,0.64)] px-2 -translate-y-1/2"
+							>
+								<img src={arrowLeft} alt="Previous" />
+							</SliderButton>
+							<SliderButton
+								next
+								class="absolute right-2 top-1/2 z-10 h-full flex items-center rounded-md bg-[rgba(255,255,255,0.64)] px-2 -translate-y-1/2"
+							>
+								<img src={arrowRight} alt="Next" />
+							</SliderButton>
 						</div>
-						<SliderButton
-							prev
-							class="absolute left-2 top-1/2 z-10 h-full flex items-center rounded-md bg-[rgba(255,255,255,0.64)] px-2 -translate-y-1/2"
-						>
-							<img src={arrowLeft} alt="Previous" />
-						</SliderButton>
-						<SliderButton
-							next
-							class="absolute right-2 top-1/2 z-10 h-full flex items-center rounded-md bg-[rgba(255,255,255,0.64)] px-2 -translate-y-1/2"
-						>
-							<img src={arrowRight} alt="Next" />
-						</SliderButton>
 					</SliderProvider>
 				</div>
 				<div class="flex flex-col gap-2">

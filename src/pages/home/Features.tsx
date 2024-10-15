@@ -60,7 +60,6 @@ const Features: Component = () => {
 							transition={{
 								duration: 3,
 								repeat: Infinity,
-								ease: 'ease-in-out',
 							}}
 						>
 							<GradientText>

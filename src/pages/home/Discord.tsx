@@ -4,7 +4,7 @@ import Button from '@components/shared/Button';
 
 const Discord: Component = () => {
 	return (
-		<section class="border-btm w-full flex justify-center bg-white py-12">
+		<section class="border-btm w-full flex justify-center bg-white py-12 pb-20">
 			<div class="max-container flex flex-col items-start md:flex-row md:items-end md:gap-8">
 				<div>
 					<img src={discord} />
