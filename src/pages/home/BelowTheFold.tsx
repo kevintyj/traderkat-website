@@ -46,7 +46,7 @@ const BelowTheFold: Component = () => {
 						your entry and exit opportunities.
 					</h2>
 					<div class="relative flex flex-col items-center md:items-inherit">
-						<a>
+						<a target="_blank" href="https://coinmeerkat.onelink.me/a7gb/eguvlg43">
 							<Button store size="xlarge">
 								Download today!
 							</Button>

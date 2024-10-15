@@ -20,9 +20,11 @@ const NavBar: Component = () => {
 			<div class="border-btm nav-top hidden h-[72px] w-full items-center justify-center bg-white md:flex">
 				<div class="max-container flex flex-1 items-center justify-between">
 					<img src={logo} class="h-12 w-auto" />
-					<Button store size="large">
-						Download Today!
-					</Button>
+					<a target="_blank" href="https://coinmeerkat.onelink.me/a7gb/eguvlg43">
+						<Button store size="large">
+							Download Today!
+						</Button>
+					</a>
 				</div>
 			</div>
 		</div>

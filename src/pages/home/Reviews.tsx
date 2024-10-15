@@ -117,7 +117,9 @@ const Reviews: Component = () => {
 					</SliderProvider>
 				</div>
 				<div class="flex flex-col gap-2">
-					<Button store size="xlarge">Check out the app</Button>
+					<a target="_blank" href="https://coinmeerkat.onelink.me/a7gb/eguvlg43">
+						<Button store size="xlarge">Check out the app</Button>
+					</a>
 					<p class="opacity-60">
 						Exclusive offer:
 						{' '}

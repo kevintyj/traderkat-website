@@ -88,7 +88,7 @@ const YouTubePopout: Component<{ videoId: string; onClose: () => void }> = (prop
 				animate={{ scale: 1, opacity: 1 }}
 				exit={{ scale: 0.9, opacity: 0 }}
 				transition={{ duration: 0.3 }}
-				class="relative w-full max-w-sm cursor-default rounded-3xl bg-white p-2 shadow-2xl"
+				class="relative max-w-sm w-full cursor-default rounded-3xl bg-white p-2 shadow-2xl"
 				onClick={e => e.stopPropagation()}
 			>
 				<a
@@ -113,13 +113,14 @@ const YouTubePopout: Component<{ videoId: string; onClose: () => void }> = (prop
 					</Button>
 				</a>
 				<div class="aspect-[9/16] overflow-hidden rounded-2xl">
-					<div class="relative w-full h-full">
+					<div class="relative h-full w-full">
 						<iframe
-							class="absolute top-1/2 left-1/2 w-[177.78%] h-[177.78%] -translate-x-1/2 -translate-y-1/2 scale-[0.5625] origin-center"
+							class="absolute left-1/2 top-1/2 h-[177.78%] w-[177.78%] origin-center scale-[0.5625] -translate-x-1/2 -translate-y-1/2"
 							src={`https://www.youtube.com/embed/${props.videoId}?autoplay=1&rel=0&modestbranding=1&playsinline=1&iv_load_policy=3&fs=0&controls=1&disablekb=1&loop=1&playlist=${props.videoId}`}
 							allow="autoplay; encrypted-media; gyroscope; picture-in-picture"
 							allowfullscreen
-						></iframe>
+						>
+						</iframe>
 					</div>
 				</div>
 			</Motion.div>
@@ -142,7 +143,7 @@ const AboveTheFold: Component = () => {
 						wasting time
 						creating alerts.
 					</h1>
-					<a href="#" class="z-24 md:hidden"><Button store size="large">Download today!</Button></a>
+					<a target="_blank" href="https://coinmeerkat.onelink.me/a7gb/eguvlg43" class="z-24 md:hidden"><Button store size="large">Download today!</Button></a>
 					<div class="relative mt-[-80px] md:mt-[-100px]">
 						<a class="absolute inset-0 z-10 w-full flex cursor-pointer items-center justify-center" onClick={() => setShowVideo(true)}>
 							<PlayButton />

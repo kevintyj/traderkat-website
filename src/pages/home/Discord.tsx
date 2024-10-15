@@ -16,7 +16,7 @@ const Discord: Component = () => {
 					<p class="py-2 text-lg opacity-60">
 						Join our community to talk directly with the team and our users!
 					</p>
-					<Button color="discord" size="large">Join Today</Button>
+					<a target="_blank" href="https://discord.gg/b34ygu7aBe"><Button color="discord" size="large">Join Today</Button></a>
 				</div>
 			</div>
 		</section>

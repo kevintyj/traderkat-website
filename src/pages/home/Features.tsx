@@ -81,7 +81,7 @@ const Features: Component = () => {
 					</ul>
 				</div>
 				<div class="flex flex-col items-center gap-2 pt-16 text-white md:hidden">
-					<Button store size="large" color="white">Download Today</Button>
+					<a target="_blank" href="https://coinmeerkat.onelink.me/a7gb/eguvlg43"><Button store size="large" color="white">Download Today</Button></a>
 					<p class="opacity-60">
 						Exclusive Offer:
 						{' '}
